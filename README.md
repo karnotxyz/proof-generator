@@ -21,23 +21,23 @@ To checkout an example, check out the `examples` directory.
 2. Create a corresponding input file, e.g. `dummy_snos_input.json`.
 3. Modify the `examples/cpu_air_params.json` and `examples/cpu_air_config.json` to fit your needs. Check out the [stone-prover](https://github.com/starkware-libs/stone-prover) documentation to see how to generate these files.
 
-If you want to generate a proof after bootloading it, you can use the following command:
+- If you want to generate a proof after bootloading it, you can use the following command:
 ```shell
 make prove_with_bootloader CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
-If you want to generate a proof for a program directly, you can use the following command:
+- If you want to generate a proof for a program directly, you can use the following command:
 ```shell
 make prove_with_program CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
 
-If you want to generate a PIE(Position Independent Executable) program, you can use the following command:
+- If you want to generate a PIE(Position Independent Executable) program, you can use the following command:
 ```shell
 make generate_pie CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
-If you want to run the PIE program, you can use the following command:
+- If you want to run the PIE program, you can use the following command:
 ```shell
 make run_pie CAIRO_PROGRAM=<path_to_cairo_file>
 ```
