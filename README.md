@@ -28,5 +28,16 @@ make prove_with_bootloader CAIRO_PROGRAM=<path_to_cairo_file>
 
 If you want to generate a proof for a program directly, you can use the following command:
 ```shell
-make prove_with_bootloader CAIRO_PROGRAM=<path_to_cairo_file>
+make prove_with_program CAIRO_PROGRAM=<path_to_cairo_file>
+```
+
+
+If you want to generate a PIE(Position Independent Executable) program, you can use the following command:
+```shell
+make generate_pie CAIRO_PROGRAM=<path_to_cairo_file>
+```
+
+If you want to run the PIE program, you can use the following command:
+```shell
+make run_pie CAIRO_PROGRAM=<path_to_cairo_file>
 ```
