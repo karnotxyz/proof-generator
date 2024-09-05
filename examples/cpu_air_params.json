@@ -7,9 +7,9 @@
   "stark": {
     "fri": {
       "fri_step_list": [
-        0,
         4,
-        2
+        4,
+        1
       ],
       "last_layer_degree_bound": 128,
       "n_queries": 10,

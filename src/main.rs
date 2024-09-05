@@ -119,6 +119,11 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     let compiled_program = args[1].clone();
+    let air_public_input = args[2].clone();
+    let air_private_input_file = args[3].clone();
+    let memory_file = args[4].clone();
+    let trace_file = args[5].clone();
+
     let bootloader_program = load_bootloader()?;
     let dummy_snos_program = std::fs::read(compiled_program)?;
     let tasks = make_bootloader_tasks(&[&dummy_snos_program], &[])?;
@@ -128,12 +133,22 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Air public input
     {
         let json = runner.get_air_public_input().unwrap().serialize_json()?;
-        std::fs::write(args[2].clone(), json)?;
+        std::fs::write(air_public_input, json)?;
+    }
+
+    // Air private input
+    {
+        let json = runner
+            .get_air_private_input()
+            .to_serializable(trace_file.clone(), memory_file.clone())
+            .serialize_json()?;
+        // print!("{:?}", json);
+        std::fs::write(air_private_input_file, json)?;
     }
 
     // memory_file
     {
-        let memory_file = std::fs::File::create(args[4].clone())?;
+        let memory_file = std::fs::File::create(memory_file)?;
         let mut memory_writer =
             FileWriter::new(io::BufWriter::with_capacity(5 * 1024 * 1024, memory_file));
 
@@ -144,22 +159,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Trace file
     {
         let relocated_trace = runner.relocated_trace.clone().unwrap().clone();
-        let trace_file = std::fs::File::create(args[5].clone())?;
+        let trace_file = std::fs::File::create(trace_file)?;
         let mut trace_writer =
             FileWriter::new(io::BufWriter::with_capacity(3 * 1024 * 1024, trace_file));
 
         cairo_vm::cairo_run::write_encoded_trace(&relocated_trace, &mut trace_writer)?;
         trace_writer.flush()?;
-    }
-
-    // Air private input
-    {
-        let json = runner
-            .get_air_private_input()
-            .to_serializable(args[3].clone(), args[4].clone())
-            .serialize_json()?;
-        // print!("{:?}", json);
-        std::fs::write(args[3].clone(), json)?;
     }
 
     let mut output_buffer = "Program Output:\n".to_string();

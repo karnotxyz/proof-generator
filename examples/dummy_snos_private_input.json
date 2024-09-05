@@ -1,6 +1,6 @@
 {
-  "trace_path": "examples/dummy_snos_private_input.json",
-  "memory_path": "examples/dummy_snos_memory.bin",
+  "trace_path": "./examples/dummy_snos_trace.bin",
+  "memory_path": "./examples/dummy_snos_memory.bin",
   "pedersen": [
     {
       "index": 0,

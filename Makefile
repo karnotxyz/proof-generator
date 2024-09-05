@@ -79,8 +79,8 @@ run: compile
 
 
 run_bootloader: compile
-	cargo run -- $(COMPILED_OUTPUT) $(PUBLIC_INPUT) $(PRIVATE_INPUT) $(MEMORY_FILE) $(TRACE_FILE) $(layout)
-	node process_json.js
+	cargo run -- $(COMPILED_OUTPUT) $(PUBLIC_INPUT) $(PRIVATE_INPUT) $(MEMORY_FILE) $(TRACE_FILE)
+	node format.js $(PUBLIC_INPUT)
 
 # Generate the proof
 prove_with_bootloader: run_bootloader
