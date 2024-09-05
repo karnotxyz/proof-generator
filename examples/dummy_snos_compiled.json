@@ -155,7 +155,7 @@
                             "end_col": 81,
                             "end_line": 6,
                             "input_file": {
-                                "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
                             },
                             "start_col": 5,
                             "start_line": 6
@@ -167,7 +167,7 @@
                     "end_col": 31,
                     "end_line": 9,
                     "input_file": {
-                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
                     },
                     "start_col": 5,
                     "start_line": 9
@@ -193,7 +193,7 @@
                     "end_col": 15,
                     "end_line": 10,
                     "input_file": {
-                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
                     },
                     "start_col": 5,
                     "start_line": 10
@@ -219,7 +219,7 @@
                     "end_col": 32,
                     "end_line": 3,
                     "input_file": {
-                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
                     },
                     "start_col": 5,
                     "start_line": 3
@@ -245,21 +245,21 @@
                     "end_col": 36,
                     "end_line": 4,
                     "input_file": {
-                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
                     },
                     "parent_location": [
                         {
                             "end_col": 38,
                             "end_line": 2,
                             "input_file": {
-                                "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
                             },
                             "parent_location": [
                                 {
                                     "end_col": 15,
                                     "end_line": 5,
                                     "input_file": {
-                                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
                                     },
                                     "start_col": 5,
                                     "start_line": 5
@@ -295,7 +295,7 @@
                     "end_col": 15,
                     "end_line": 5,
                     "input_file": {
-                        "filename": "/Users/bytezorvin/work/karnot/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
                     },
                     "start_col": 5,
                     "start_line": 5

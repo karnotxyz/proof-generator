@@ -2,17 +2,13 @@
 
 LAYOUT ?= small
 
-# Check if CAIRO_PROGRAM is provided, if not, use a default value
-ifndef CAIRO_PROGRAM
-$(error CAIRO_PROGRAM is not set. Usage: make CAIRO_PROGRAM=your_program.cairo)
-endif
 
 # Extract the base name without extension
 BASE_NAME := $(basename $(CAIRO_PROGRAM))
 DIR_NAME := $(dir $(CAIRO_PROGRAM))
 
 # Variables
-CAIRO_ENV := ~/work/karnot/cairo-vm/cairo-vm-env/bin/activate
+CAIRO_ENV := ./dependencies/cairo-vm/cairo-vm-env/bin/activate
 COMPILED_OUTPUT := $(BASE_NAME)_compiled.json
 PROGRAM_INPUT := $(BASE_NAME)_input.json
 PUBLIC_INPUT := $(BASE_NAME)_public_input.json
@@ -23,7 +19,7 @@ PROOF_FILE := $(BASE_NAME)_proof.json
 CAIRO_PIE_OUTPUT := $(BASE_NAME)_pie.zip
 PROVER_CONFIG := $(DIR_NAME)cpu_air_prover_config.json
 PARAM_FILE := $(DIR_NAME)cpu_air_params.json
-CPU_AIR_PROVER := ~/work/karnot/stone-prover/build/bazelbin/src/starkware/main/cpu/cpu_air_prover
+CPU_AIR_PROVER := ./dependencies/stone-prover/cpu_air_prover
 
 # Phony targets
 .PHONY: all compile run prove clean
@@ -37,9 +33,14 @@ define activate_env
 endef
 
 
+# Check if CAIRO_PROGRAM is provided, if not, use a default value
+check_program_set:
+ifndef CAIRO_PROGRAM
+	$(error CAIRO_PROGRAM is not set. Usage: make CAIRO_PROGRAM=your_program.cairo)
+endif
 
 # Compile the program
-compile:
+compile: check_program_set
 	$(activate_env) cairo-compile $(CAIRO_PROGRAM) --output $(COMPILED_OUTPUT) --proof_mode
 
 
@@ -103,7 +104,7 @@ prove_with_program: run
 		--parameter_file=$(PARAM_FILE)
 
 # Clean up generated files
-clean:
+clean: check_program_set
 	rm -f $(COMPILED_OUTPUT) $(TRACE_FILE) $(MEMORY_FILE) $(PROOF_FILE) $(PRIVATE_INPUT) $(PUBLIC_INPUT) $(CAIRO_PIE_OUTPUT)
 
 
