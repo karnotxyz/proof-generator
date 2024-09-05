@@ -59,7 +59,7 @@ install_macos() {
     cd - || exit
     echo "Cairo VM installed"
 
-    Install Stone Prover
+    # Install Stone Prover
     git clone https://github.com/baking-bad/stone-prover ./dependencies/stone-prover
     cd dependencies/stone-prover || exit
     ./install_deps.sh
