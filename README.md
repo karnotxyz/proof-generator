@@ -23,23 +23,23 @@ To checkout an example, check out the `examples` directory.
 
 
 ## Generating a proof
-- If you want to generate a proof after bootloading it, you can use the following command:
+- If you want to generate a proof after bootloading it, run:
 ```shell
 make prove_with_bootloader CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
-- If you want to generate a proof for a program directly, you can use the following command:
+- If you want to generate a proof for a program directly, run:
 ```shell
 make prove_with_program CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
 
-- If you want to generate a PIE(Position Independent Executable) program, you can use the following command:
+- If you want to generate a PIE(Position Independent Executable) program, run:
 ```shell
 make generate_pie CAIRO_PROGRAM=<path_to_cairo_file>
 ```
 
-- If you want to run the PIE program, you can use the following command:
+- If you want to run the PIE program, run:
 ```shell
 make run_pie CAIRO_PROGRAM=<path_to_cairo_file>
 ```
