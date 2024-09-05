@@ -19,9 +19,9 @@ cargo build
 To checkout an example, check out the `examples` directory.
 1. Create a new cairo program to proove, e.g. `dummy_snos.cairo`. 
 2. Create a corresponding input file, e.g. `dummy_snos_input.json`.
-3. Modify the `examples/cpu_air_params.json` and `examples/cpu_air_config.json` to fit your needs.
+3. Modify the `examples/cpu_air_params.json` and `examples/cpu_air_config.json` to fit your needs. Check out the [stone-prover](https://github.com/starkware-libs/stone-prover) documentation to see how to generate these files.
 
-If you want to generate a proof for a bootloader, you can use the following command:
+If you want to generate a proof after bootloading it, you can use the following command:
 ```shell
 make prove_with_bootloader CAIRO_PROGRAM=<path_to_cairo_file>
 ```
