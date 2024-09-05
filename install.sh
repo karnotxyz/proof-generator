@@ -4,7 +4,7 @@
 unsupported_os () {
     echo "Detected OS ($1) is unsupported."
     echo "Please open an issue (PRs welcome ❤️) on:"
-    echo "    https://github.com/lambdaclass/cairo-vm/issues"
+    echo "    https://github.com/karnotxyz/proof-generator/issues"
     echo ""
     echo "NOTE: you can still try installing dependencies manually"
     echo "If your OS differs from the detected one, you can look \
@@ -52,7 +52,7 @@ install_linux() {
 install_macos() {
     print_os "MacOS"
 
-    Install Cairo VM
+    # Install Cairo VM
     install_cairo_vm
     cd dependencies/cairo-vm || exit
     make deps-macos
