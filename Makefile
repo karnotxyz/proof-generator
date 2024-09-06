@@ -80,7 +80,7 @@ run: compile
 
 
 run_bootloader: compile
-	cargo run -- $(COMPILED_OUTPUT) $(PUBLIC_INPUT) $(PRIVATE_INPUT) $(MEMORY_FILE) $(TRACE_FILE)
+	cargo run -- -c $(COMPILED_OUTPUT) -u $(PUBLIC_INPUT) -p $(PRIVATE_INPUT) -m $(MEMORY_FILE) -t $(TRACE_FILE)
 	node format.js $(PUBLIC_INPUT)
 
 # Generate the proof
