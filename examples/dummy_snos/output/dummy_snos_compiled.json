@@ -320,7 +320,7 @@
                     "end_col": 18,
                     "end_line": 22,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 22
@@ -345,7 +345,7 @@
                     "end_col": 17,
                     "end_line": 25,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 25
@@ -371,7 +371,7 @@
                     "end_col": 17,
                     "end_line": 26,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 26
@@ -398,7 +398,7 @@
                     "end_col": 18,
                     "end_line": 27,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 15,
                     "start_line": 27
@@ -426,7 +426,7 @@
                     "end_col": 23,
                     "end_line": 27,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 27
@@ -455,7 +455,7 @@
                     "end_col": 21,
                     "end_line": 28,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 28
@@ -485,7 +485,7 @@
                     "end_col": 21,
                     "end_line": 29,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 29
@@ -516,7 +516,7 @@
                     "end_col": 29,
                     "end_line": 32,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 32
@@ -548,7 +548,7 @@
                     "end_col": 30,
                     "end_line": 32,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 32
@@ -580,7 +580,7 @@
                     "end_col": 30,
                     "end_line": 33,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 33
@@ -613,7 +613,7 @@
                     "end_col": 28,
                     "end_line": 37,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 37
@@ -647,7 +647,7 @@
                     "end_col": 29,
                     "end_line": 41,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 41
@@ -682,7 +682,7 @@
                     "end_col": 30,
                     "end_line": 41,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 41
@@ -717,21 +717,21 @@
                     "end_col": 28,
                     "end_line": 21,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "parent_location": [
                         {
                             "end_col": 47,
                             "end_line": 86,
                             "input_file": {
-                                "filename": "./examples/dummy_snos.cairo"
+                                "filename": "./examples/dummy_snos/dummy_snos.cairo"
                             },
                             "parent_location": [
                                 {
                                     "end_col": 34,
                                     "end_line": 45,
                                     "input_file": {
-                                        "filename": "./examples/dummy_snos.cairo"
+                                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                                     },
                                     "start_col": 9,
                                     "start_line": 45
@@ -776,7 +776,7 @@
                     "end_col": 34,
                     "end_line": 45,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 9,
                     "start_line": 45
@@ -813,7 +813,7 @@
                             "end_col": 7,
                             "end_line": 77,
                             "input_file": {
-                                "filename": "./examples/dummy_snos.cairo"
+                                "filename": "./examples/dummy_snos/dummy_snos.cairo"
                             },
                             "start_col": 5,
                             "start_line": 50
@@ -825,7 +825,7 @@
                     "end_col": 38,
                     "end_line": 81,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 25,
                     "start_line": 81
@@ -861,7 +861,7 @@
                     "end_col": 40,
                     "end_line": 81,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 81
@@ -886,7 +886,7 @@
                     "end_col": 29,
                     "end_line": 90,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 90
@@ -912,7 +912,7 @@
                     "end_col": 30,
                     "end_line": 90,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 90
@@ -938,7 +938,7 @@
                     "end_col": 29,
                     "end_line": 91,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 91
@@ -965,7 +965,7 @@
                     "end_col": 30,
                     "end_line": 91,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 91
@@ -992,7 +992,7 @@
                     "end_col": 29,
                     "end_line": 92,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 92
@@ -1020,7 +1020,7 @@
                     "end_col": 30,
                     "end_line": 92,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 92
@@ -1048,7 +1048,7 @@
                     "end_col": 29,
                     "end_line": 93,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 93
@@ -1077,7 +1077,7 @@
                     "end_col": 30,
                     "end_line": 93,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 93
@@ -1106,7 +1106,7 @@
                     "end_col": 29,
                     "end_line": 94,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 94
@@ -1136,7 +1136,7 @@
                     "end_col": 30,
                     "end_line": 94,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 94
@@ -1166,7 +1166,7 @@
                     "end_col": 29,
                     "end_line": 95,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 28,
                     "start_line": 95
@@ -1197,7 +1197,7 @@
                     "end_col": 30,
                     "end_line": 95,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 95
@@ -1228,21 +1228,21 @@
                     "end_col": 47,
                     "end_line": 86,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "parent_location": [
                         {
                             "end_col": 47,
                             "end_line": 86,
                             "input_file": {
-                                "filename": "./examples/dummy_snos.cairo"
+                                "filename": "./examples/dummy_snos/dummy_snos.cairo"
                             },
                             "parent_location": [
                                 {
                                     "end_col": 15,
                                     "end_line": 96,
                                     "input_file": {
-                                        "filename": "./examples/dummy_snos.cairo"
+                                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                                     },
                                     "start_col": 5,
                                     "start_line": 96
@@ -1283,7 +1283,7 @@
                     "end_col": 15,
                     "end_line": 96,
                     "input_file": {
-                        "filename": "./examples/dummy_snos.cairo"
+                        "filename": "./examples/dummy_snos/dummy_snos.cairo"
                     },
                     "start_col": 5,
                     "start_line": 96
