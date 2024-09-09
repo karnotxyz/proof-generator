@@ -1,25 +1,31 @@
 # Makefile for Cairo compilation and proof generation
 
 LAYOUT ?= small
+CAIRO_PROGRAM ?= examples/dummy_snos/dummy_snos.cairo
 
+CPU_AIR_PROVER := ./dependencies/stone-prover/cpu_air_prover
+CAIRO_ENV := ./dependencies/cairo-vm/cairo-vm-env/bin/activate
 
 # Extract the base name without extension
-BASE_NAME := $(basename $(CAIRO_PROGRAM))
+FILENAME_WITH_EXT := $(notdir $(CAIRO_PROGRAM))
+FILENAME_WITHOUT_EXT := $(basename $(FILENAME_WITH_EXT))
 DIR_NAME := $(dir $(CAIRO_PROGRAM))
+OUTPUT_DIR := $(DIR_NAME)output/
+OUTPUT_BASE_NAME := $(OUTPUT_DIR)$(FILENAME_WITHOUT_EXT)
+INPUT_BASE_NAME := $(basename $(CAIRO_PROGRAM))
 
 # Variables
-CAIRO_ENV := ./dependencies/cairo-vm/cairo-vm-env/bin/activate
-COMPILED_OUTPUT := $(BASE_NAME)_compiled.json
-PROGRAM_INPUT := $(BASE_NAME)_input.json
-PUBLIC_INPUT := $(BASE_NAME)_public_input.json
-PRIVATE_INPUT := $(BASE_NAME)_private_input.json
-TRACE_FILE := $(BASE_NAME)_trace.bin
-MEMORY_FILE := $(BASE_NAME)_memory.bin
-PROOF_FILE := $(BASE_NAME)_proof.json
+COMPILED_OUTPUT := $(OUTPUT_BASE_NAME)_compiled.json
+PROGRAM_INPUT := $(INPUT_BASE_NAME)_input.json
+PUBLIC_INPUT := $(OUTPUT_BASE_NAME)_public_input.json
+PRIVATE_INPUT := $(OUTPUT_BASE_NAME)_private_input.json
+TRACE_FILE := $(OUTPUT_BASE_NAME)_trace.bin
+MEMORY_FILE := $(OUTPUT_BASE_NAME)_memory.bin
+PROOF_FILE := $(OUTPUT_BASE_NAME)_proof.json
 CAIRO_PIE_OUTPUT := $(BASE_NAME)_pie.zip
-PROVER_CONFIG := $(DIR_NAME)cpu_air_prover_config.json
-PARAM_FILE := $(DIR_NAME)cpu_air_params.json
-CPU_AIR_PROVER := ./dependencies/stone-prover/cpu_air_prover
+PROVER_CONFIG := $(INPUT_BASE_NAME)_cpu_air_prover_config.json
+PARAM_FILE := $(INPUT_BASE_NAME)_cpu_air_params.json
+
 
 # Phony targets
 .PHONY: all compile run prove clean
@@ -33,7 +39,7 @@ define activate_env
 endef
 
 
-# Check if CAIRO_PROGRAM is provided, if not, use a default value
+# Check if CAIRO_PROGRAM is provided
 check_program_set:
 ifndef CAIRO_PROGRAM
 	$(error CAIRO_PROGRAM is not set. Usage: make CAIRO_PROGRAM=your_program.cairo)
@@ -41,11 +47,16 @@ endif
 
 # Compile the program
 compile: check_program_set
-	$(activate_env) cairo-compile $(CAIRO_PROGRAM) --output $(COMPILED_OUTPUT) --proof_mode
-
+	mkdir -p $(OUTPUT_DIR)
+	@echo "Compiling the program..."
+	$(activate_env) cairo-compile $(CAIRO_PROGRAM) \
+		--output $(COMPILED_OUTPUT) \
+		--proof_mode
+	@echo "Compilation Successfull !!"
 
 # Generate the pie output
 generate_pie: compile
+	@echo "Genrating the PIE..."
 	$(activate_env) cairo-run \
 		--program=$(COMPILED_OUTPUT) \
 		--layout=$(LAYOUT) \
@@ -54,19 +65,24 @@ generate_pie: compile
 		--trace_file=$(TRACE_FILE) \
 		--memory_file=$(MEMORY_FILE) \
 		--print_output
+	@echo "PIE generation Successfull !!"
+
 
 # Run the program
 run_pie: generate_pie
+	@echo "Running the prorgram with PIE..."
 	$(activate_env) cairo-run \
 		--layout=$(LAYOUT) \
 		--run_from_cairo_pie=$(CAIRO_PIE_OUTPUT) \
 		--trace_file=$(TRACE_FILE) \
 		--memory_file=$(MEMORY_FILE) \
 		--print_output \
+	@echo "Running with PIE Successfull !!"
 
 
 # Run the program
 run: compile
+	@echo "Running the program..."
 	$(activate_env) cairo-run \
 		--program=$(COMPILED_OUTPUT) \
 		--layout=$(LAYOUT) \
@@ -77,14 +93,16 @@ run: compile
 		--memory_file=$(MEMORY_FILE) \
 		--print_output \
 		--proof_mode
-
+	@echo "Running Successfull !!"
 
 run_bootloader: compile
 	cargo run -- -c $(COMPILED_OUTPUT) -u $(PUBLIC_INPUT) -p $(PRIVATE_INPUT) -m $(MEMORY_FILE) -t $(TRACE_FILE)
 	node format.js $(PUBLIC_INPUT)
+	@echo "Running with bootloader Successfull !!"
 
 # Generate the proof
-prove_with_bootloader: run_bootloader
+proove_with_bootloader: run_bootloader
+	@echo "Running the stone-prover..."
 	$(CPU_AIR_PROVER) \
 		--generate-annotations \
 		--out_file=$(PROOF_FILE) \
@@ -92,9 +110,11 @@ prove_with_bootloader: run_bootloader
 		--public_input_file=$(PUBLIC_INPUT) \
 		--prover_config_file=$(PROVER_CONFIG) \
 		--parameter_file=$(PARAM_FILE)
+	@echo "Prooving with bootloader Successfull !!"
 
 # Generate the proof
-prove_with_program: run
+proove_with_program: run
+	@echo "Running the stone-prover..."
 	$(CPU_AIR_PROVER) \
 		--generate-annotations \
 		--out_file=$(PROOF_FILE) \
@@ -102,6 +122,9 @@ prove_with_program: run
 		--public_input_file=$(PUBLIC_INPUT) \
 		--prover_config_file=$(PROVER_CONFIG) \
 		--parameter_file=$(PARAM_FILE)
+	@echo "Prooving without bootloader Successfull !!"
+
+
 
 # Clean up generated files
 clean: check_program_set
@@ -112,6 +135,8 @@ clean: check_program_set
 print-config:
 	@echo "Current configuration:"
 	@echo "CAIRO_PROGRAM: $(CAIRO_PROGRAM)"
+	@echo "DIR_NAME: $(DIR_NAME)"
+	@echo "OUTPUT_DIR: $(OUTPUT_DIR)"
 	@echo "BASE_NAME: $(BASE_NAME)"
 	@echo "COMPILED_OUTPUT: $(COMPILED_OUTPUT)"
 	@echo "PUBLIC_INPUT: $(PUBLIC_INPUT)"

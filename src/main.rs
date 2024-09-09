@@ -1,3 +1,6 @@
+// Check out https://github.com/Moonsong-Labs/cairo-bootloader/blob/main/examples/run_program.rs
+
+
 use std::error::Error;
 
 use bincode::enc::write::Writer;
@@ -31,7 +34,7 @@ fn cairo_run_bootloader_in_proof_mode(
     let cairo_run_config = CairoRunConfig {
         entrypoint: "main",
         trace_enabled: true,
-        relocate_mem: true,
+        relocate_mem: false,
         layout: LayoutName::small,
         proof_mode: true,
         secure_run: Some(true),
