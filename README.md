@@ -8,7 +8,7 @@ This repository uses [stone-prover](https://github.com/starkware-libs/stone-prov
 
 ## Overview
 
-You can generate proofs for cairo programs here. The commands available are documented here.
+You can generate proofs for cairo programs here.
 There are 2 ways to genrate proofs:
 
 1. First bootloading the program and then proving the execution of the bootloader. This is the recommended way and generates smaller proofs. Check out a simple bootloader [here](https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/bootloaders/simple_bootloader/simple_bootloader.cairo_)
