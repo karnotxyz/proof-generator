@@ -1,6 +1,7 @@
 # Makefile for Cairo compilation and proof generation
 
 LAYOUT ?= small
+CAIRO_PROGRAM ?= examples/dummy_snos/dummy_snos.cairo
 
 CPU_AIR_PROVER := ./dependencies/stone-prover/cpu_air_prover
 CAIRO_ENV := ./dependencies/cairo-vm/cairo-vm-env/bin/activate
@@ -38,7 +39,7 @@ define activate_env
 endef
 
 
-# Check if CAIRO_PROGRAM is provided, if not, use a default value
+# Check if CAIRO_PROGRAM is provided
 check_program_set:
 ifndef CAIRO_PROGRAM
 	$(error CAIRO_PROGRAM is not set. Usage: make CAIRO_PROGRAM=your_program.cairo)
@@ -47,13 +48,15 @@ endif
 # Compile the program
 compile: check_program_set
 	mkdir -p $(OUTPUT_DIR)
+	@echo "Compiling the program..."
 	$(activate_env) cairo-compile $(CAIRO_PROGRAM) \
 		--output $(COMPILED_OUTPUT) \
 		--proof_mode
-
+	@echo "Compilation Successfull !!"
 
 # Generate the pie output
 generate_pie: compile
+	@echo "Genrating the PIE..."
 	$(activate_env) cairo-run \
 		--program=$(COMPILED_OUTPUT) \
 		--layout=$(LAYOUT) \
@@ -62,19 +65,24 @@ generate_pie: compile
 		--trace_file=$(TRACE_FILE) \
 		--memory_file=$(MEMORY_FILE) \
 		--print_output
+	@echo "PIE generation Successfull !!"
+
 
 # Run the program
 run_pie: generate_pie
+	@echo "Running the prorgram with PIE..."
 	$(activate_env) cairo-run \
 		--layout=$(LAYOUT) \
 		--run_from_cairo_pie=$(CAIRO_PIE_OUTPUT) \
 		--trace_file=$(TRACE_FILE) \
 		--memory_file=$(MEMORY_FILE) \
 		--print_output \
+	@echo "Running with PIE Successfull !!"
 
 
 # Run the program
 run: compile
+	@echo "Running the program..."
 	$(activate_env) cairo-run \
 		--program=$(COMPILED_OUTPUT) \
 		--layout=$(LAYOUT) \
@@ -85,14 +93,17 @@ run: compile
 		--memory_file=$(MEMORY_FILE) \
 		--print_output \
 		--proof_mode
-
+	@echo "Running Successfull !!"
 
 run_bootloader: compile
+	@echo "Running with bootloader..."
 	cargo run -- $(COMPILED_OUTPUT) $(PUBLIC_INPUT) $(PRIVATE_INPUT) $(MEMORY_FILE) $(TRACE_FILE)
 	node format.js $(PUBLIC_INPUT)
+	@echo "Running with bootloader Successfull !!"
 
 # Generate the proof
 proove_with_bootloader: run_bootloader
+	@echo "Running the stone-prover..."
 	$(CPU_AIR_PROVER) \
 		--generate-annotations \
 		--out_file=$(PROOF_FILE) \
@@ -100,9 +111,11 @@ proove_with_bootloader: run_bootloader
 		--public_input_file=$(PUBLIC_INPUT) \
 		--prover_config_file=$(PROVER_CONFIG) \
 		--parameter_file=$(PARAM_FILE)
+	@echo "Prooving with bootloader Successfull !!"
 
 # Generate the proof
 proove_with_program: run
+	@echo "Running the stone-prover..."
 	$(CPU_AIR_PROVER) \
 		--generate-annotations \
 		--out_file=$(PROOF_FILE) \
@@ -110,6 +123,9 @@ proove_with_program: run
 		--public_input_file=$(PUBLIC_INPUT) \
 		--prover_config_file=$(PROVER_CONFIG) \
 		--parameter_file=$(PARAM_FILE)
+	@echo "Prooving without bootloader Successfull !!"
+
+
 
 # Clean up generated files
 clean: check_program_set

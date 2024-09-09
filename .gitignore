@@ -1,2 +1,4 @@
 /target
-dependencies
+dependencies/
+examples/*/output/
+.vscode/

@@ -1,1954 +1,2058 @@
 {
-  "attributes": [],
-  "builtins": ["output"],
-  "compiler_version": "0.13.1",
-  "data": [
-    "0x40780017fff7fff",
-    "0x1",
-    "0x1104800180018000",
-    "0xa",
-    "0x10780017fff7fff",
-    "0x0",
-    "0x400b7ffd7fff7ffc",
-    "0x208b7fff7fff7ffe",
-    "0x400380007ffc7ffd",
-    "0x482680017ffc8000",
-    "0x1",
-    "0x208b7fff7fff7ffe",
-    "0x40780017fff7fff",
-    "0x6",
-    "0x400780017fff8000",
-    "0x2",
-    "0x400780017fff8001",
-    "0x2",
-    "0x484a800180008000",
-    "0x402980017fff8002",
-    "0x402b800180028003",
-    "0x402b800180008004",
-    "0x480680017fff8000",
-    "0x1",
-    "0x400280007ffd7fff",
-    "0x400380017ffd8002",
-    "0x400780017fff8005",
-    "0x1",
-    "0x480680017fff8000",
-    "0x7",
-    "0x400280027ffd7fff",
-    "0x480a7ffd7fff8000",
-    "0x1104800180018000",
-    "0x5",
-    "0x482480017fff8000",
-    "0x9",
-    "0x208b7fff7fff7ffe",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280037ffd7fff",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280047ffd7fff",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280057ffd7fff",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280067ffd7fff",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280077ffd7fff",
-    "0x480680017fff8000",
-    "0x8",
-    "0x400280087ffd7fff",
-    "0x480a7ffd7fff8000",
-    "0x208b7fff7fff7ffe"
-  ],
-  "debug_info": {
-    "file_contents": {
-      "<start>": "__start__:\nap += main.Args.SIZE + main.ImplicitArgs.SIZE;\ncall main;\n\n__end__:\njmp rel 0;\n"
-    },
-    "instruction_locations": {
-      "0": {
-        "accessible_scopes": ["__main__"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 0,
-            "offset": 0
-          },
-          "reference_ids": {}
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 46,
-          "end_line": 2,
-          "input_file": {
-            "filename": "<start>"
-          },
-          "start_col": 1,
-          "start_line": 2
-        }
-      },
-      "2": {
-        "accessible_scopes": ["__main__"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 0,
-            "offset": 1
-          },
-          "reference_ids": {}
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 10,
-          "end_line": 3,
-          "input_file": {
-            "filename": "<start>"
-          },
-          "start_col": 1,
-          "start_line": 3
-        }
-      },
-      "4": {
-        "accessible_scopes": ["__main__"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 1,
-            "offset": 0
-          },
-          "reference_ids": {}
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 10,
-          "end_line": 6,
-          "input_file": {
-            "filename": "<start>"
-          },
-          "start_col": 1,
-          "start_line": 6
-        }
-      },
-      "6": {
-        "accessible_scopes": [
-          "starkware.cairo.common.segments",
-          "starkware.cairo.common.segments.relocate_segment"
-        ],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 2,
-            "offset": 0
-          },
-          "reference_ids": {
-            "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
-            "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
-          }
-        },
-        "hints": [
-          {
-            "location": {
-              "end_col": 81,
-              "end_line": 6,
-              "input_file": {
-                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
-              },
-              "start_col": 5,
-              "start_line": 6
-            },
-            "n_prefix_newlines": 0
-          }
-        ],
-        "inst": {
-          "end_col": 31,
-          "end_line": 9,
-          "input_file": {
-            "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
-          },
-          "start_col": 5,
-          "start_line": 9
-        }
-      },
-      "7": {
-        "accessible_scopes": [
-          "starkware.cairo.common.segments",
-          "starkware.cairo.common.segments.relocate_segment"
-        ],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 2,
-            "offset": 0
-          },
-          "reference_ids": {
-            "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
-            "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 15,
-          "end_line": 10,
-          "input_file": {
-            "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
-          },
-          "start_col": 5,
-          "start_line": 10
-        }
-      },
-      "8": {
-        "accessible_scopes": [
-          "starkware.cairo.common.serialize",
-          "starkware.cairo.common.serialize.serialize_word"
-        ],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 3,
-            "offset": 0
-          },
-          "reference_ids": {
-            "starkware.cairo.common.serialize.serialize_word.output_ptr": 3,
-            "starkware.cairo.common.serialize.serialize_word.word": 2
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 32,
-          "end_line": 3,
-          "input_file": {
-            "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
-          },
-          "start_col": 5,
-          "start_line": 3
-        }
-      },
-      "9": {
-        "accessible_scopes": [
-          "starkware.cairo.common.serialize",
-          "starkware.cairo.common.serialize.serialize_word"
-        ],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 3,
-            "offset": 0
-          },
-          "reference_ids": {
-            "starkware.cairo.common.serialize.serialize_word.output_ptr": 4,
-            "starkware.cairo.common.serialize.serialize_word.word": 2
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 36,
-          "end_line": 4,
-          "input_file": {
-            "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
-          },
-          "parent_location": [
-            {
-              "end_col": 38,
-              "end_line": 2,
-              "input_file": {
-                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
-              },
-              "parent_location": [
-                {
-                  "end_col": 15,
-                  "end_line": 5,
-                  "input_file": {
-                    "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
-                  },
-                  "start_col": 5,
-                  "start_line": 5
-                },
-                "While trying to retrieve the implicit argument 'output_ptr' in:"
-              ],
-              "start_col": 21,
-              "start_line": 2
-            },
-            "While expanding the reference 'output_ptr' in:"
-          ],
-          "start_col": 22,
-          "start_line": 4
-        }
-      },
-      "11": {
-        "accessible_scopes": [
-          "starkware.cairo.common.serialize",
-          "starkware.cairo.common.serialize.serialize_word"
-        ],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 3,
-            "offset": 1
-          },
-          "reference_ids": {
-            "starkware.cairo.common.serialize.serialize_word.output_ptr": 4,
-            "starkware.cairo.common.serialize.serialize_word.word": 2
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 15,
-          "end_line": 5,
-          "input_file": {
-            "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
-          },
-          "start_col": 5,
-          "start_line": 5
-        }
-      },
-      "12": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 0
-          },
-          "reference_ids": {
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 18,
-          "end_line": 22,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 22
-        }
-      },
-      "14": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 6
-          },
-          "reference_ids": {
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 17,
-          "end_line": 25,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 25
-        }
-      },
-      "16": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 6
-          },
-          "reference_ids": {
-            "__main__.main.a": 6,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 17,
-          "end_line": 26,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 26
-        }
-      },
-      "18": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 6
-          },
-          "reference_ids": {
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 18,
-          "end_line": 27,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 15,
-          "start_line": 27
-        }
-      },
-      "19": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 7
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 23,
-          "end_line": 27,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 27
-        }
-      },
-      "20": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 7
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 21,
-          "end_line": 28,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 28
-        }
-      },
-      "21": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 7
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 21,
-          "end_line": 29,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 29
-        }
-      },
-      "22": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 7
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 32,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 32
-        }
-      },
-      "24": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 8
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 32,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 32
-        }
-      },
-      "25": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 8
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 33,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 33
-        }
-      },
-      "26": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 8
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 28,
-          "end_line": 37,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 37
-        }
-      },
-      "28": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 8
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 41,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 41
-        }
-      },
-      "30": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 9
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 41,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 41
-        }
-      },
-      "31": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 9
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 28,
-          "end_line": 21,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "parent_location": [
-            {
-              "end_col": 47,
-              "end_line": 86,
-              "input_file": {
-                "filename": "./examples/dummy_snos/dummy_snos.cairo"
-              },
-              "parent_location": [
-                {
-                  "end_col": 34,
-                  "end_line": 45,
-                  "input_file": {
-                    "filename": "./examples/dummy_snos/dummy_snos.cairo"
-                  },
-                  "start_col": 9,
-                  "start_line": 45
-                },
-                "While trying to retrieve the implicit argument 'output_ptr' in:"
-              ],
-              "start_col": 30,
-              "start_line": 86
-            },
-            "While expanding the reference 'output_ptr' in:"
-          ],
-          "start_col": 11,
-          "start_line": 21
-        }
-      },
-      "32": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 4,
-            "offset": 10
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 5,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 34,
-          "end_line": 45,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 9,
-          "start_line": 45
-        }
-      },
-      "34": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 5,
-            "offset": 0
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.da_start": 17,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 16,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [
-          {
-            "location": {
-              "end_col": 7,
-              "end_line": 77,
-              "input_file": {
-                "filename": "./examples/dummy_snos/dummy_snos.cairo"
-              },
-              "start_col": 5,
-              "start_line": 50
-            },
-            "n_prefix_newlines": 1
-          }
-        ],
-        "inst": {
-          "end_col": 38,
-          "end_line": 81,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 25,
-          "start_line": 81
-        }
-      },
-      "36": {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 5,
-            "offset": 1
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.da_start": 17,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 16,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 40,
-          "end_line": 81,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 81
-        }
-      },
-      "37": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 0
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 90,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 90
-        }
-      },
-      "39": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 1
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 90,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 90
-        }
-      },
-      "40": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 1
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 91,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 91
-        }
-      },
-      "42": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 2
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 91,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 91
-        }
-      },
-      "43": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 2
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 92,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 92
-        }
-      },
-      "45": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 3
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 92,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 92
-        }
-      },
-      "46": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 3
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 93,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 93
-        }
-      },
-      "48": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 4
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 93,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 93
-        }
-      },
-      "49": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 4
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 94,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 94
-        }
-      },
-      "51": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 5
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.__temp7": 23,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 94,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 94
-        }
-      },
-      "52": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 5
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.__temp7": 23,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 29,
-          "end_line": 95,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 28,
-          "start_line": 95
-        }
-      },
-      "54": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 6
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.__temp7": 23,
-            "__main__.serialize_output_header.__temp8": 24,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 30,
-          "end_line": 95,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 95
-        }
-      },
-      "55": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 6
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.__temp7": 23,
-            "__main__.serialize_output_header.__temp8": 24,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 47,
-          "end_line": 86,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "parent_location": [
-            {
-              "end_col": 47,
-              "end_line": 86,
-              "input_file": {
-                "filename": "./examples/dummy_snos/dummy_snos.cairo"
-              },
-              "parent_location": [
-                {
-                  "end_col": 15,
-                  "end_line": 96,
-                  "input_file": {
-                    "filename": "./examples/dummy_snos/dummy_snos.cairo"
-                  },
-                  "start_col": 5,
-                  "start_line": 96
-                },
-                "While trying to retrieve the implicit argument 'output_ptr' in:"
-              ],
-              "start_col": 30,
-              "start_line": 86
-            },
-            "While expanding the reference 'output_ptr' in:"
-          ],
-          "start_col": 30,
-          "start_line": 86
-        }
-      },
-      "56": {
-        "accessible_scopes": ["__main__", "__main__.serialize_output_header"],
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 6,
-            "offset": 7
-          },
-          "reference_ids": {
-            "__main__.serialize_output_header.__temp3": 19,
-            "__main__.serialize_output_header.__temp4": 20,
-            "__main__.serialize_output_header.__temp5": 21,
-            "__main__.serialize_output_header.__temp6": 22,
-            "__main__.serialize_output_header.__temp7": 23,
-            "__main__.serialize_output_header.__temp8": 24,
-            "__main__.serialize_output_header.output_ptr": 18
-          }
-        },
-        "hints": [],
-        "inst": {
-          "end_col": 15,
-          "end_line": 96,
-          "input_file": {
-            "filename": "./examples/dummy_snos/dummy_snos.cairo"
-          },
-          "start_col": 5,
-          "start_line": 96
-        }
-      }
-    }
-  },
-  "hints": {
-    "6": [
-      {
-        "accessible_scopes": [
-          "starkware.cairo.common.segments",
-          "starkware.cairo.common.segments.relocate_segment"
-        ],
-        "code": "memory.add_relocation_rule(src_ptr=ids.src_ptr, dest_ptr=ids.dest_ptr)",
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 2,
-            "offset": 0
-          },
-          "reference_ids": {
-            "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
-            "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
-          }
-        }
-      }
+    "attributes": [],
+    "builtins": [
+        "output"
     ],
-    "34": [
-      {
-        "accessible_scopes": ["__main__", "__main__.main"],
-        "code": "onchain_data_start = ids.da_start\nmax_page_size=1\nfor i in range(4):\n  start_offset = i * max_page_size\n  output_builtin.add_page(\n      page_id=1 + i,\n      page_start=onchain_data_start + start_offset + 1,\n      page_size=max_page_size\n  )\n\n# Set the tree structure to a root with two children:\n# * A leaf which represents the main part\n# * An inner node for the onchain data part (which contains n_pages children).\n#\n# This is encoded using the following sequence:\noutput_builtin.add_attribute('gps_fact_topology', [\n    # Push 1 + n_pages pages (all of the pages).\n    1 + 3,\n    # Create a parent node for the last n_pages.\n    3,\n    # Don't push additional pages.\n    0,\n    # Take the first page (the main part) and the node that was created (onchain data)\n    # and use them to construct the root of the fact tree.\n    2,\n])",
-        "flow_tracking_data": {
-          "ap_tracking": {
-            "group": 5,
-            "offset": 0
-          },
-          "reference_ids": {
-            "__main__.main.__temp0": 8,
-            "__main__.main.__temp1": 12,
-            "__main__.main.__temp2": 15,
-            "__main__.main.a": 6,
-            "__main__.main.b": 7,
-            "__main__.main.c": 9,
-            "__main__.main.d": 10,
-            "__main__.main.da_start": 17,
-            "__main__.main.e": 11,
-            "__main__.main.output_ptr": 16,
-            "__main__.main.state_updates_ptr": 14,
-            "__main__.main.state_updates_start": 13
-          }
-        }
-      }
-    ]
-  },
-  "identifiers": {
-    "__main__.__end__": {
-      "pc": 4,
-      "type": "label"
-    },
-    "__main__.__start__": {
-      "pc": 0,
-      "type": "label"
-    },
-    "__main__.main": {
-      "decorators": [],
-      "pc": 12,
-      "type": "function"
-    },
-    "__main__.main.Args": {
-      "full_name": "__main__.main.Args",
-      "members": {
-        "output_ptr": {
-          "cairo_type": "felt*",
-          "offset": 0
-        }
-      },
-      "size": 1,
-      "type": "struct"
-    },
-    "__main__.main.ImplicitArgs": {
-      "full_name": "__main__.main.ImplicitArgs",
-      "members": {},
-      "size": 0,
-      "type": "struct"
-    },
-    "__main__.main.Return": {
-      "cairo_type": "(output_ptr: felt*)",
-      "type": "type_definition"
-    },
-    "__main__.main.SIZEOF_LOCALS": {
-      "type": "const",
-      "value": 6
-    },
-    "__main__.main.__temp0": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.__temp0",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 7
-          },
-          "pc": 19,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.__temp1": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.__temp1",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 8
-          },
-          "pc": 24,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.__temp2": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.__temp2",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 9
-          },
-          "pc": 30,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.a": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.a",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 6
-          },
-          "pc": 16,
-          "value": "[cast(fp, felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.b": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.b",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 6
-          },
-          "pc": 18,
-          "value": "[cast(fp + 1, felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.c": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.c",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 7
-          },
-          "pc": 20,
-          "value": "[cast(fp + 2, felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.d": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.d",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 7
-          },
-          "pc": 21,
-          "value": "[cast(fp + 3, felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.da_start": {
-      "cairo_type": "felt*",
-      "full_name": "__main__.main.da_start",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 5,
-            "offset": 0
-          },
-          "pc": 34,
-          "value": "[cast(ap + (-1), felt**)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.e": {
-      "cairo_type": "felt",
-      "full_name": "__main__.main.e",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 7
-          },
-          "pc": 22,
-          "value": "[cast(fp + 4, felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.main.output_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "__main__.main.output_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 0
-          },
-          "pc": 12,
-          "value": "[cast(fp + (-3), felt**)]"
+    "compiler_version": "0.13.1",
+    "data": [
+        "0x40780017fff7fff",
+        "0x1",
+        "0x1104800180018000",
+        "0xa",
+        "0x10780017fff7fff",
+        "0x0",
+        "0x400b7ffd7fff7ffc",
+        "0x208b7fff7fff7ffe",
+        "0x400380007ffc7ffd",
+        "0x482680017ffc8000",
+        "0x1",
+        "0x208b7fff7fff7ffe",
+        "0x40780017fff7fff",
+        "0x6",
+        "0x400780017fff8000",
+        "0x2",
+        "0x400780017fff8001",
+        "0x2",
+        "0x484a800180008000",
+        "0x402980017fff8002",
+        "0x402b800180028003",
+        "0x402b800180008004",
+        "0x480680017fff8000",
+        "0x1",
+        "0x400280007ffd7fff",
+        "0x400380017ffd8002",
+        "0x400780017fff8005",
+        "0x1",
+        "0x480680017fff8000",
+        "0x7",
+        "0x400280027ffd7fff",
+        "0x480a7ffd7fff8000",
+        "0x1104800180018000",
+        "0x5",
+        "0x482480017fff8000",
+        "0x9",
+        "0x208b7fff7fff7ffe",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280037ffd7fff",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280047ffd7fff",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280057ffd7fff",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280067ffd7fff",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280077ffd7fff",
+        "0x480680017fff8000",
+        "0x8",
+        "0x400280087ffd7fff",
+        "0x480a7ffd7fff8000",
+        "0x208b7fff7fff7ffe"
+    ],
+    "debug_info": {
+        "file_contents": {
+            "<start>": "__start__:\nap += main.Args.SIZE + main.ImplicitArgs.SIZE;\ncall main;\n\n__end__:\njmp rel 0;\n"
         },
-        {
-          "ap_tracking_data": {
-            "group": 5,
-            "offset": 0
-          },
-          "pc": 34,
-          "value": "[cast(ap + (-1), felt**)]"
+        "instruction_locations": {
+            "0": {
+                "accessible_scopes": [
+                    "__main__"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 46,
+                    "end_line": 2,
+                    "input_file": {
+                        "filename": "<start>"
+                    },
+                    "start_col": 1,
+                    "start_line": 2
+                }
+            },
+            "2": {
+                "accessible_scopes": [
+                    "__main__"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 1
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 10,
+                    "end_line": 3,
+                    "input_file": {
+                        "filename": "<start>"
+                    },
+                    "start_col": 1,
+                    "start_line": 3
+                }
+            },
+            "4": {
+                "accessible_scopes": [
+                    "__main__"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 1,
+                        "offset": 0
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 10,
+                    "end_line": 6,
+                    "input_file": {
+                        "filename": "<start>"
+                    },
+                    "start_col": 1,
+                    "start_line": 6
+                }
+            },
+            "6": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.segments",
+                    "starkware.cairo.common.segments.relocate_segment"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
+                        "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
+                    }
+                },
+                "hints": [
+                    {
+                        "location": {
+                            "end_col": 81,
+                            "end_line": 6,
+                            "input_file": {
+                                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                            },
+                            "start_col": 5,
+                            "start_line": 6
+                        },
+                        "n_prefix_newlines": 0
+                    }
+                ],
+                "inst": {
+                    "end_col": 31,
+                    "end_line": 9,
+                    "input_file": {
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 9
+                }
+            },
+            "7": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.segments",
+                    "starkware.cairo.common.segments.relocate_segment"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
+                        "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 10,
+                    "input_file": {
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/segments.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 10
+                }
+            },
+            "8": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.serialize",
+                    "starkware.cairo.common.serialize.serialize_word"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.serialize.serialize_word.output_ptr": 3,
+                        "starkware.cairo.common.serialize.serialize_word.word": 2
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 32,
+                    "end_line": 3,
+                    "input_file": {
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 3
+                }
+            },
+            "9": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.serialize",
+                    "starkware.cairo.common.serialize.serialize_word"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.serialize.serialize_word.output_ptr": 4,
+                        "starkware.cairo.common.serialize.serialize_word.word": 2
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 36,
+                    "end_line": 4,
+                    "input_file": {
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 38,
+                            "end_line": 2,
+                            "input_file": {
+                                "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 15,
+                                    "end_line": 5,
+                                    "input_file": {
+                                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                                    },
+                                    "start_col": 5,
+                                    "start_line": 5
+                                },
+                                "While trying to retrieve the implicit argument 'output_ptr' in:"
+                            ],
+                            "start_col": 21,
+                            "start_line": 2
+                        },
+                        "While expanding the reference 'output_ptr' in:"
+                    ],
+                    "start_col": 22,
+                    "start_line": 4
+                }
+            },
+            "11": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.serialize",
+                    "starkware.cairo.common.serialize.serialize_word"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.serialize.serialize_word.output_ptr": 4,
+                        "starkware.cairo.common.serialize.serialize_word.word": 2
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "/Users/bytezorvin/work/karnot/proof-generator/dependencies/cairo-vm/cairo-vm-env/lib/python3.9/site-packages/starkware/cairo/common/serialize.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 5
+                }
+            },
+            "12": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 18,
+                    "end_line": 22,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 22
+                }
+            },
+            "14": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 17,
+                    "end_line": 25,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 25
+                }
+            },
+            "16": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.main.a": 6,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 17,
+                    "end_line": 26,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 26
+                }
+            },
+            "18": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 18,
+                    "end_line": 27,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 15,
+                    "start_line": 27
+                }
+            },
+            "19": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 23,
+                    "end_line": 27,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 27
+                }
+            },
+            "20": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 21,
+                    "end_line": 28,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 28
+                }
+            },
+            "21": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 21,
+                    "end_line": 29,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 29
+                }
+            },
+            "22": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 32,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 32
+                }
+            },
+            "24": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 32,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 32
+                }
+            },
+            "25": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 33,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 33
+                }
+            },
+            "26": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 28,
+                    "end_line": 37,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 37
+                }
+            },
+            "28": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 41,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 41
+                }
+            },
+            "30": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 9
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 41,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 41
+                }
+            },
+            "31": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 9
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 28,
+                    "end_line": 21,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 47,
+                            "end_line": 86,
+                            "input_file": {
+                                "filename": "examples/dummy_snos/dummy_snos.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 34,
+                                    "end_line": 45,
+                                    "input_file": {
+                                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                                    },
+                                    "start_col": 9,
+                                    "start_line": 45
+                                },
+                                "While trying to retrieve the implicit argument 'output_ptr' in:"
+                            ],
+                            "start_col": 30,
+                            "start_line": 86
+                        },
+                        "While expanding the reference 'output_ptr' in:"
+                    ],
+                    "start_col": 11,
+                    "start_line": 21
+                }
+            },
+            "32": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 4,
+                        "offset": 10
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 5,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 34,
+                    "end_line": 45,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 45
+                }
+            },
+            "34": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 5,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.da_start": 17,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 16,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [
+                    {
+                        "location": {
+                            "end_col": 7,
+                            "end_line": 77,
+                            "input_file": {
+                                "filename": "examples/dummy_snos/dummy_snos.cairo"
+                            },
+                            "start_col": 5,
+                            "start_line": 50
+                        },
+                        "n_prefix_newlines": 1
+                    }
+                ],
+                "inst": {
+                    "end_col": 38,
+                    "end_line": 81,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 25,
+                    "start_line": 81
+                }
+            },
+            "36": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 5,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.da_start": 17,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 16,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 40,
+                    "end_line": 81,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 81
+                }
+            },
+            "37": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 90,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 90
+                }
+            },
+            "39": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 90,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 90
+                }
+            },
+            "40": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 91,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 91
+                }
+            },
+            "42": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 2
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 91,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 91
+                }
+            },
+            "43": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 2
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 92,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 92
+                }
+            },
+            "45": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 3
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 92,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 92
+                }
+            },
+            "46": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 3
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 93,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 93
+                }
+            },
+            "48": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 4
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 93,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 93
+                }
+            },
+            "49": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 4
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 94,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 94
+                }
+            },
+            "51": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 5
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.__temp7": 23,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 94,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 94
+                }
+            },
+            "52": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 5
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.__temp7": 23,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 29,
+                    "end_line": 95,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 28,
+                    "start_line": 95
+                }
+            },
+            "54": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.__temp7": 23,
+                        "__main__.serialize_output_header.__temp8": 24,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 95,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 95
+                }
+            },
+            "55": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.__temp7": 23,
+                        "__main__.serialize_output_header.__temp8": 24,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 47,
+                    "end_line": 86,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 47,
+                            "end_line": 86,
+                            "input_file": {
+                                "filename": "examples/dummy_snos/dummy_snos.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 15,
+                                    "end_line": 96,
+                                    "input_file": {
+                                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                                    },
+                                    "start_col": 5,
+                                    "start_line": 96
+                                },
+                                "While trying to retrieve the implicit argument 'output_ptr' in:"
+                            ],
+                            "start_col": 30,
+                            "start_line": 86
+                        },
+                        "While expanding the reference 'output_ptr' in:"
+                    ],
+                    "start_col": 30,
+                    "start_line": 86
+                }
+            },
+            "56": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.serialize_output_header"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 6,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.serialize_output_header.__temp3": 19,
+                        "__main__.serialize_output_header.__temp4": 20,
+                        "__main__.serialize_output_header.__temp5": 21,
+                        "__main__.serialize_output_header.__temp6": 22,
+                        "__main__.serialize_output_header.__temp7": 23,
+                        "__main__.serialize_output_header.__temp8": 24,
+                        "__main__.serialize_output_header.output_ptr": 18
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 96,
+                    "input_file": {
+                        "filename": "examples/dummy_snos/dummy_snos.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 96
+                }
+            }
         }
-      ],
-      "type": "reference"
     },
-    "__main__.main.state_updates_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "__main__.main.state_updates_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 8
-          },
-          "pc": 28,
-          "value": "[cast(fp + 5, felt**)]"
-        }
-      ],
-      "type": "reference"
+    "hints": {
+        "6": [
+            {
+                "accessible_scopes": [
+                    "starkware.cairo.common.segments",
+                    "starkware.cairo.common.segments.relocate_segment"
+                ],
+                "code": "memory.add_relocation_rule(src_ptr=ids.src_ptr, dest_ptr=ids.dest_ptr)",
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.segments.relocate_segment.dest_ptr": 1,
+                        "starkware.cairo.common.segments.relocate_segment.src_ptr": 0
+                    }
+                }
+            }
+        ],
+        "34": [
+            {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "code": "onchain_data_start = ids.da_start\nmax_page_size=1\nfor i in range(4):\n  start_offset = i * max_page_size\n  output_builtin.add_page(\n      page_id=1 + i,\n      page_start=onchain_data_start + start_offset + 1,\n      page_size=max_page_size\n  )\n\n# Set the tree structure to a root with two children:\n# * A leaf which represents the main part\n# * An inner node for the onchain data part (which contains n_pages children).\n#\n# This is encoded using the following sequence:\noutput_builtin.add_attribute('gps_fact_topology', [\n    # Push 1 + n_pages pages (all of the pages).\n    1 + 3,\n    # Create a parent node for the last n_pages.\n    3,\n    # Don't push additional pages.\n    0,\n    # Take the first page (the main part) and the node that was created (onchain data)\n    # and use them to construct the root of the fact tree.\n    2,\n])",
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 5,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.__temp0": 8,
+                        "__main__.main.__temp1": 12,
+                        "__main__.main.__temp2": 15,
+                        "__main__.main.a": 6,
+                        "__main__.main.b": 7,
+                        "__main__.main.c": 9,
+                        "__main__.main.d": 10,
+                        "__main__.main.da_start": 17,
+                        "__main__.main.e": 11,
+                        "__main__.main.output_ptr": 16,
+                        "__main__.main.state_updates_ptr": 14,
+                        "__main__.main.state_updates_start": 13
+                    }
+                }
+            }
+        ]
     },
-    "__main__.main.state_updates_start": {
-      "cairo_type": "felt*",
-      "full_name": "__main__.main.state_updates_start",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 4,
-            "offset": 8
-          },
-          "pc": 26,
-          "value": "[cast(fp + 5, felt**)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.relocate_segment": {
-      "destination": "starkware.cairo.common.segments.relocate_segment",
-      "type": "alias"
-    },
-    "__main__.serialize_output_header": {
-      "decorators": [],
-      "pc": 37,
-      "type": "function"
-    },
-    "__main__.serialize_output_header.Args": {
-      "full_name": "__main__.serialize_output_header.Args",
-      "members": {},
-      "size": 0,
-      "type": "struct"
-    },
-    "__main__.serialize_output_header.ImplicitArgs": {
-      "full_name": "__main__.serialize_output_header.ImplicitArgs",
-      "members": {
-        "output_ptr": {
-          "cairo_type": "felt*",
-          "offset": 0
-        }
-      },
-      "size": 1,
-      "type": "struct"
-    },
-    "__main__.serialize_output_header.Return": {
-      "cairo_type": "()",
-      "type": "type_definition"
-    },
-    "__main__.serialize_output_header.SIZEOF_LOCALS": {
-      "type": "const",
-      "value": 0
-    },
-    "__main__.serialize_output_header.__temp3": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp3",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 1
-          },
-          "pc": 39,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.__temp4": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp4",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 2
-          },
-          "pc": 42,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.__temp5": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp5",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 3
-          },
-          "pc": 45,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.__temp6": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp6",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 4
-          },
-          "pc": 48,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.__temp7": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp7",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 5
-          },
-          "pc": 51,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.__temp8": {
-      "cairo_type": "felt",
-      "full_name": "__main__.serialize_output_header.__temp8",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 6
-          },
-          "pc": 54,
-          "value": "[cast(ap + (-1), felt*)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_output_header.output_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "__main__.serialize_output_header.output_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 6,
-            "offset": 0
-          },
-          "pc": 37,
-          "value": "[cast(fp + (-3), felt**)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "__main__.serialize_word": {
-      "destination": "starkware.cairo.common.serialize.serialize_word",
-      "type": "alias"
-    },
-    "starkware.cairo.common.segments.relocate_segment": {
-      "decorators": [],
-      "pc": 6,
-      "type": "function"
-    },
-    "starkware.cairo.common.segments.relocate_segment.Args": {
-      "full_name": "starkware.cairo.common.segments.relocate_segment.Args",
-      "members": {
-        "dest_ptr": {
-          "cairo_type": "felt*",
-          "offset": 1
+    "identifiers": {
+        "__main__.__end__": {
+            "pc": 4,
+            "type": "label"
         },
-        "src_ptr": {
-          "cairo_type": "felt*",
-          "offset": 0
-        }
-      },
-      "size": 2,
-      "type": "struct"
-    },
-    "starkware.cairo.common.segments.relocate_segment.ImplicitArgs": {
-      "full_name": "starkware.cairo.common.segments.relocate_segment.ImplicitArgs",
-      "members": {},
-      "size": 0,
-      "type": "struct"
-    },
-    "starkware.cairo.common.segments.relocate_segment.Return": {
-      "cairo_type": "()",
-      "type": "type_definition"
-    },
-    "starkware.cairo.common.segments.relocate_segment.SIZEOF_LOCALS": {
-      "type": "const",
-      "value": 0
-    },
-    "starkware.cairo.common.segments.relocate_segment.dest_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "starkware.cairo.common.segments.relocate_segment.dest_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 2,
-            "offset": 0
-          },
-          "pc": 6,
-          "value": "[cast(fp + (-3), felt**)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "starkware.cairo.common.segments.relocate_segment.src_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "starkware.cairo.common.segments.relocate_segment.src_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 2,
-            "offset": 0
-          },
-          "pc": 6,
-          "value": "[cast(fp + (-4), felt**)]"
-        }
-      ],
-      "type": "reference"
-    },
-    "starkware.cairo.common.serialize.serialize_word": {
-      "decorators": [],
-      "pc": 8,
-      "type": "function"
-    },
-    "starkware.cairo.common.serialize.serialize_word.Args": {
-      "full_name": "starkware.cairo.common.serialize.serialize_word.Args",
-      "members": {
-        "word": {
-          "cairo_type": "felt",
-          "offset": 0
-        }
-      },
-      "size": 1,
-      "type": "struct"
-    },
-    "starkware.cairo.common.serialize.serialize_word.ImplicitArgs": {
-      "full_name": "starkware.cairo.common.serialize.serialize_word.ImplicitArgs",
-      "members": {
-        "output_ptr": {
-          "cairo_type": "felt*",
-          "offset": 0
-        }
-      },
-      "size": 1,
-      "type": "struct"
-    },
-    "starkware.cairo.common.serialize.serialize_word.Return": {
-      "cairo_type": "()",
-      "type": "type_definition"
-    },
-    "starkware.cairo.common.serialize.serialize_word.SIZEOF_LOCALS": {
-      "type": "const",
-      "value": 0
-    },
-    "starkware.cairo.common.serialize.serialize_word.output_ptr": {
-      "cairo_type": "felt*",
-      "full_name": "starkware.cairo.common.serialize.serialize_word.output_ptr",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 3,
-            "offset": 0
-          },
-          "pc": 8,
-          "value": "[cast(fp + (-4), felt**)]"
+        "__main__.__start__": {
+            "pc": 0,
+            "type": "label"
         },
-        {
-          "ap_tracking_data": {
-            "group": 3,
-            "offset": 0
-          },
-          "pc": 9,
-          "value": "cast([fp + (-4)] + 1, felt*)"
+        "__main__.main": {
+            "decorators": [],
+            "pc": 12,
+            "type": "function"
+        },
+        "__main__.main.Args": {
+            "full_name": "__main__.main.Args",
+            "members": {
+                "output_ptr": {
+                    "cairo_type": "felt*",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "__main__.main.ImplicitArgs": {
+            "full_name": "__main__.main.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.main.Return": {
+            "cairo_type": "(output_ptr: felt*)",
+            "type": "type_definition"
+        },
+        "__main__.main.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 6
+        },
+        "__main__.main.__temp0": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.__temp0",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "pc": 19,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.__temp1": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.__temp1",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "pc": 24,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.__temp2": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.__temp2",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 9
+                    },
+                    "pc": 30,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.a": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.a",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 6
+                    },
+                    "pc": 16,
+                    "value": "[cast(fp, felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.b": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.b",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 6
+                    },
+                    "pc": 18,
+                    "value": "[cast(fp + 1, felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.c": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.c",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "pc": 20,
+                    "value": "[cast(fp + 2, felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.d": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.d",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "pc": 21,
+                    "value": "[cast(fp + 3, felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.da_start": {
+            "cairo_type": "felt*",
+            "full_name": "__main__.main.da_start",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 5,
+                        "offset": 0
+                    },
+                    "pc": 34,
+                    "value": "[cast(ap + (-1), felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.e": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.e",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 7
+                    },
+                    "pc": 22,
+                    "value": "[cast(fp + 4, felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.output_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "__main__.main.output_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 0
+                    },
+                    "pc": 12,
+                    "value": "[cast(fp + (-3), felt**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 5,
+                        "offset": 0
+                    },
+                    "pc": 34,
+                    "value": "[cast(ap + (-1), felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.state_updates_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "__main__.main.state_updates_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "pc": 28,
+                    "value": "[cast(fp + 5, felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.state_updates_start": {
+            "cairo_type": "felt*",
+            "full_name": "__main__.main.state_updates_start",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 4,
+                        "offset": 8
+                    },
+                    "pc": 26,
+                    "value": "[cast(fp + 5, felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.relocate_segment": {
+            "destination": "starkware.cairo.common.segments.relocate_segment",
+            "type": "alias"
+        },
+        "__main__.serialize_output_header": {
+            "decorators": [],
+            "pc": 37,
+            "type": "function"
+        },
+        "__main__.serialize_output_header.Args": {
+            "full_name": "__main__.serialize_output_header.Args",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.serialize_output_header.ImplicitArgs": {
+            "full_name": "__main__.serialize_output_header.ImplicitArgs",
+            "members": {
+                "output_ptr": {
+                    "cairo_type": "felt*",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "__main__.serialize_output_header.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "__main__.serialize_output_header.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "__main__.serialize_output_header.__temp3": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp3",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 1
+                    },
+                    "pc": 39,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.__temp4": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp4",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 2
+                    },
+                    "pc": 42,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.__temp5": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp5",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 3
+                    },
+                    "pc": 45,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.__temp6": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp6",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 4
+                    },
+                    "pc": 48,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.__temp7": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp7",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 5
+                    },
+                    "pc": 51,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.__temp8": {
+            "cairo_type": "felt",
+            "full_name": "__main__.serialize_output_header.__temp8",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 6
+                    },
+                    "pc": 54,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_output_header.output_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "__main__.serialize_output_header.output_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 6,
+                        "offset": 0
+                    },
+                    "pc": 37,
+                    "value": "[cast(fp + (-3), felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.serialize_word": {
+            "destination": "starkware.cairo.common.serialize.serialize_word",
+            "type": "alias"
+        },
+        "starkware.cairo.common.segments.relocate_segment": {
+            "decorators": [],
+            "pc": 6,
+            "type": "function"
+        },
+        "starkware.cairo.common.segments.relocate_segment.Args": {
+            "full_name": "starkware.cairo.common.segments.relocate_segment.Args",
+            "members": {
+                "dest_ptr": {
+                    "cairo_type": "felt*",
+                    "offset": 1
+                },
+                "src_ptr": {
+                    "cairo_type": "felt*",
+                    "offset": 0
+                }
+            },
+            "size": 2,
+            "type": "struct"
+        },
+        "starkware.cairo.common.segments.relocate_segment.ImplicitArgs": {
+            "full_name": "starkware.cairo.common.segments.relocate_segment.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "starkware.cairo.common.segments.relocate_segment.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "starkware.cairo.common.segments.relocate_segment.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "starkware.cairo.common.segments.relocate_segment.dest_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "starkware.cairo.common.segments.relocate_segment.dest_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "pc": 6,
+                    "value": "[cast(fp + (-3), felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "starkware.cairo.common.segments.relocate_segment.src_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "starkware.cairo.common.segments.relocate_segment.src_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "pc": 6,
+                    "value": "[cast(fp + (-4), felt**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "starkware.cairo.common.serialize.serialize_word": {
+            "decorators": [],
+            "pc": 8,
+            "type": "function"
+        },
+        "starkware.cairo.common.serialize.serialize_word.Args": {
+            "full_name": "starkware.cairo.common.serialize.serialize_word.Args",
+            "members": {
+                "word": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "starkware.cairo.common.serialize.serialize_word.ImplicitArgs": {
+            "full_name": "starkware.cairo.common.serialize.serialize_word.ImplicitArgs",
+            "members": {
+                "output_ptr": {
+                    "cairo_type": "felt*",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "starkware.cairo.common.serialize.serialize_word.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "starkware.cairo.common.serialize.serialize_word.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "starkware.cairo.common.serialize.serialize_word.output_ptr": {
+            "cairo_type": "felt*",
+            "full_name": "starkware.cairo.common.serialize.serialize_word.output_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "pc": 8,
+                    "value": "[cast(fp + (-4), felt**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "pc": 9,
+                    "value": "cast([fp + (-4)] + 1, felt*)"
+                }
+            ],
+            "type": "reference"
+        },
+        "starkware.cairo.common.serialize.serialize_word.word": {
+            "cairo_type": "felt",
+            "full_name": "starkware.cairo.common.serialize.serialize_word.word",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "pc": 8,
+                    "value": "[cast(fp + (-3), felt*)]"
+                }
+            ],
+            "type": "reference"
         }
-      ],
-      "type": "reference"
     },
-    "starkware.cairo.common.serialize.serialize_word.word": {
-      "cairo_type": "felt",
-      "full_name": "starkware.cairo.common.serialize.serialize_word.word",
-      "references": [
-        {
-          "ap_tracking_data": {
-            "group": 3,
-            "offset": 0
-          },
-          "pc": 8,
-          "value": "[cast(fp + (-3), felt*)]"
-        }
-      ],
-      "type": "reference"
+    "main_scope": "__main__",
+    "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+    "reference_manager": {
+        "references": [
+            {
+                "ap_tracking_data": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "pc": 6,
+                "value": "[cast(fp + (-4), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "pc": 6,
+                "value": "[cast(fp + (-3), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 0
+                },
+                "pc": 8,
+                "value": "[cast(fp + (-3), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 0
+                },
+                "pc": 8,
+                "value": "[cast(fp + (-4), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 0
+                },
+                "pc": 9,
+                "value": "cast([fp + (-4)] + 1, felt*)"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 0
+                },
+                "pc": 12,
+                "value": "[cast(fp + (-3), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 6
+                },
+                "pc": 16,
+                "value": "[cast(fp, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 6
+                },
+                "pc": 18,
+                "value": "[cast(fp + 1, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 7
+                },
+                "pc": 19,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 7
+                },
+                "pc": 20,
+                "value": "[cast(fp + 2, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 7
+                },
+                "pc": 21,
+                "value": "[cast(fp + 3, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 7
+                },
+                "pc": 22,
+                "value": "[cast(fp + 4, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 8
+                },
+                "pc": 24,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 8
+                },
+                "pc": 26,
+                "value": "[cast(fp + 5, felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 8
+                },
+                "pc": 28,
+                "value": "[cast(fp + 5, felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 4,
+                    "offset": 9
+                },
+                "pc": 30,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 5,
+                    "offset": 0
+                },
+                "pc": 34,
+                "value": "[cast(ap + (-1), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 5,
+                    "offset": 0
+                },
+                "pc": 34,
+                "value": "[cast(ap + (-1), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 0
+                },
+                "pc": 37,
+                "value": "[cast(fp + (-3), felt**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 1
+                },
+                "pc": 39,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 2
+                },
+                "pc": 42,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 3
+                },
+                "pc": 45,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 4
+                },
+                "pc": 48,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 5
+                },
+                "pc": 51,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 6,
+                    "offset": 6
+                },
+                "pc": 54,
+                "value": "[cast(ap + (-1), felt*)]"
+            }
+        ]
     }
-  },
-  "main_scope": "__main__",
-  "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
-  "reference_manager": {
-    "references": [
-      {
-        "ap_tracking_data": {
-          "group": 2,
-          "offset": 0
-        },
-        "pc": 6,
-        "value": "[cast(fp + (-4), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 2,
-          "offset": 0
-        },
-        "pc": 6,
-        "value": "[cast(fp + (-3), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 3,
-          "offset": 0
-        },
-        "pc": 8,
-        "value": "[cast(fp + (-3), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 3,
-          "offset": 0
-        },
-        "pc": 8,
-        "value": "[cast(fp + (-4), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 3,
-          "offset": 0
-        },
-        "pc": 9,
-        "value": "cast([fp + (-4)] + 1, felt*)"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 0
-        },
-        "pc": 12,
-        "value": "[cast(fp + (-3), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 6
-        },
-        "pc": 16,
-        "value": "[cast(fp, felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 6
-        },
-        "pc": 18,
-        "value": "[cast(fp + 1, felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 7
-        },
-        "pc": 19,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 7
-        },
-        "pc": 20,
-        "value": "[cast(fp + 2, felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 7
-        },
-        "pc": 21,
-        "value": "[cast(fp + 3, felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 7
-        },
-        "pc": 22,
-        "value": "[cast(fp + 4, felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 8
-        },
-        "pc": 24,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 8
-        },
-        "pc": 26,
-        "value": "[cast(fp + 5, felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 8
-        },
-        "pc": 28,
-        "value": "[cast(fp + 5, felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 4,
-          "offset": 9
-        },
-        "pc": 30,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 5,
-          "offset": 0
-        },
-        "pc": 34,
-        "value": "[cast(ap + (-1), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 5,
-          "offset": 0
-        },
-        "pc": 34,
-        "value": "[cast(ap + (-1), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 0
-        },
-        "pc": 37,
-        "value": "[cast(fp + (-3), felt**)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 1
-        },
-        "pc": 39,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 2
-        },
-        "pc": 42,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 3
-        },
-        "pc": 45,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 4
-        },
-        "pc": 48,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 5
-        },
-        "pc": 51,
-        "value": "[cast(ap + (-1), felt*)]"
-      },
-      {
-        "ap_tracking_data": {
-          "group": 6,
-          "offset": 6
-        },
-        "pc": 54,
-        "value": "[cast(ap + (-1), felt*)]"
-      }
-    ]
-  }
 }
