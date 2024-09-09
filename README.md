@@ -4,7 +4,7 @@ A proof generator for cairo programs.
 
 ### Credits
 
-This repository uses [stone-prover](https://github.com/starkware-libs/stone-prover) under the hood to generate proofs and uses [cairo-vm](https://github.com/lambdaclass/cairo-vm) to run, compile. The bootloader is taken from [bootloader](https://github.com/Moonsong-Labs/cairo-bootloader.git) repository.
+This repository uses [stone-prover](https://github.com/starkware-libs/stone-prover) under the hood to generate proofs and uses [cairo-vm](https://github.com/lambdaclass/cairo-vm) to run, compile. The bootloader is taken from [bootloader](https://github.com/Moonsong-Labs/cairo-bootloader.git) repository. To know more about bootloading check this [out](https://youtu.be/xHc_pKXN9h8?si=CMtp1cHjexRWDWYH&t=513)
 
 ## Overview
 
