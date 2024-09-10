@@ -125,15 +125,9 @@ struct Args {
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
 
-    for path in [
-        &args.compiled_program,
-        &args.air_public_input,
-        &args.air_private_input,
-        &args.memory_file,
-        &args.trace,
-    ] {
-        if !Path::new(path).exists() {
-            eprintln!("Error: File '{}' does not exist", path);
+    {
+        if !Path::new(&args.compiled_program).exists() {
+            eprintln!("Error: File '{}' does not exist", args.compiled_program);
             std::process::exit(1);
         }
     }
