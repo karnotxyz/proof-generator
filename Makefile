@@ -96,7 +96,12 @@ run: compile
 	@echo "Running Successfull !!"
 
 run_bootloader: compile
-	cargo run -- -c $(COMPILED_OUTPUT) -u $(PUBLIC_INPUT) -p $(PRIVATE_INPUT) -m $(MEMORY_FILE) -t $(TRACE_FILE)
+	cargo run -- \
+		--compiled-program $(COMPILED_OUTPUT) \
+		--air-public-input $(PUBLIC_INPUT) \
+		--air-private-input $(PRIVATE_INPUT) \
+		--memory-file $(MEMORY_FILE) \
+		--trace $(TRACE_FILE)
 	node format.js $(PUBLIC_INPUT)
 	@echo "Running with bootloader Successfull !!"
 

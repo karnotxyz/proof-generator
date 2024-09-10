@@ -48,15 +48,15 @@ func main(output_ptr: felt*) -> (output_ptr: felt*) {
     let da_start = output_ptr;
 
     %{
-            onchain_data_start = ids.da_start
-            max_page_size=1
-            for i in range(4):
-              start_offset = i * max_page_size
-              output_builtin.add_page(
-                  page_id=1 + i,
-                  page_start=onchain_data_start + start_offset + 1,
-                  page_size=max_page_size
-              )
+            // onchain_data_start = ids.da_start
+            // max_page_size=1
+            // for i in range(4):
+            //   start_offset = i * max_page_size
+            //   output_builtin.add_page(
+            //       page_id=1 + i,
+            //       page_start=onchain_data_start + start_offset + 1,
+            //       page_size=max_page_size
+            //   )
 
             # Set the tree structure to a root with two children:
             # * A leaf which represents the main part
