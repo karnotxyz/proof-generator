@@ -107,19 +107,19 @@ impl FileWriter {
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
-    #[arg(short, long)]
+    #[arg(short, long, required = true)]
     compiled_program: String,
 
-    #[arg(short='u', long)]
+    #[arg(short='u', long, required = true)]
     air_public_input: String,
 
-    #[arg(short='p', long)]
+    #[arg(short='p', long, required = true)]
     air_private_input: String,
 
-    #[arg(short, long)]
+    #[arg(short, long, required = true)]
     memory_file: String,
 
-    #[arg(short, long)]
+    #[arg(short, long, required = true)]
     trace: String,
 }
 
