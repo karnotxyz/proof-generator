@@ -18,11 +18,11 @@ use cairo_bootloader::{
     PackedOutput, SimpleBootloaderInput, TaskSpec,
 };
 use std::{
-    env,
     io::{self, Write},
-    // path::PathBuf,
     path::Path,
 };
+
+use clap::Parser;
 
 fn cairo_run_bootloader_in_proof_mode(
     bootloader_program: &Program,
@@ -103,31 +103,43 @@ impl FileWriter {
     }
 }
 
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+struct Args {
+    #[arg(short, long, required = true)]
+    compiled_program: String,
+
+    #[arg(short='u', long, required = true)]
+    air_public_input: String,
+
+    #[arg(short='p', long, required = true)]
+    air_private_input: String,
+
+    #[arg(short, long, required = true)]
+    memory_file: String,
+
+    #[arg(short, long, required = true)]
+    trace: String,
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
-    let args: Vec<String> = env::args().collect();
+    let args = Args::parse();
 
-    if args.len() != 6 {
-        eprintln!(
-            "Usage: cargo run --release -- <cairo_program_compiled.json> <air_public_input> <air_private_input> <memory_file> <trace_file>",
-        );
-        std::process::exit(1);
-    }
-
-    for (_, path) in args[1..].iter().enumerate() {
+    for path in [
+        &args.compiled_program,
+        &args.air_public_input,
+        &args.air_private_input,
+        &args.memory_file,
+        &args.trace,
+    ] {
         if !Path::new(path).exists() {
             eprintln!("Error: File '{}' does not exist", path);
-            continue;
+            std::process::exit(1);
         }
     }
 
-    let compiled_program = args[1].clone();
-    let air_public_input = args[2].clone();
-    let air_private_input_file = args[3].clone();
-    let memory_file = args[4].clone();
-    let trace_file = args[5].clone();
-
     let bootloader_program = load_bootloader()?;
-    let dummy_snos_program = std::fs::read(compiled_program)?;
+    let dummy_snos_program = std::fs::read(args.compiled_program)?;
     let tasks = make_bootloader_tasks(&[&dummy_snos_program], &[])?;
 
     let mut runner = cairo_run_bootloader_in_proof_mode(&bootloader_program, tasks)?;
@@ -135,22 +147,22 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Air public input
     {
         let json = runner.get_air_public_input().unwrap().serialize_json()?;
-        std::fs::write(air_public_input, json)?;
+        std::fs::write(args.air_public_input, json)?;
     }
 
     // Air private input
     {
         let json = runner
             .get_air_private_input()
-            .to_serializable(trace_file.clone(), memory_file.clone())
+            .to_serializable(args.trace.clone(), args.memory_file.clone())
             .serialize_json()?;
         // print!("{:?}", json);
-        std::fs::write(air_private_input_file, json)?;
+        std::fs::write(args.air_private_input, json)?;
     }
 
     // memory_file
     {
-        let memory_file = std::fs::File::create(memory_file)?;
+        let memory_file = std::fs::File::create(args.memory_file)?;
         let mut memory_writer =
             FileWriter::new(io::BufWriter::with_capacity(5 * 1024 * 1024, memory_file));
 
@@ -161,7 +173,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Trace file
     {
         let relocated_trace = runner.relocated_trace.clone().unwrap().clone();
-        let trace_file = std::fs::File::create(trace_file)?;
+        let trace_file = std::fs::File::create(args.trace)?;
         let mut trace_writer =
             FileWriter::new(io::BufWriter::with_capacity(3 * 1024 * 1024, trace_file));
 
