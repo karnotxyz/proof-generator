@@ -1,6 +1,7 @@
 // Check out https://github.com/Moonsong-Labs/cairo-bootloader/blob/main/examples/run_program.rs
 
 use std::error::Error;
+use std::str::FromStr;
 
 use bincode::enc::write::Writer;
 use cairo_vm::cairo_run::{cairo_run_program_with_initial_scope, CairoRunConfig};
@@ -27,6 +28,7 @@ use clap::Parser;
 fn cairo_run_bootloader_in_proof_mode(
     bootloader_program: &Program,
     tasks: Vec<TaskSpec>,
+    layout: LayoutName
 ) -> Result<CairoRunner, CairoRunError> {
     let mut hint_processor = BootloaderHintProcessor::new();
 
@@ -34,7 +36,7 @@ fn cairo_run_bootloader_in_proof_mode(
         entrypoint: "main",
         trace_enabled: true,
         relocate_mem: true,
-        layout: LayoutName::small,
+        layout,
         proof_mode: true,
         secure_run: Some(true),
         disable_trace_padding: false,
@@ -120,6 +122,37 @@ struct Args {
 
     #[arg(short, long, required = true)]
     trace: String,
+
+    #[arg(short, long, value_parser = parse_layout, default_value = "small")]
+    layout: LayoutName
+}
+
+#[derive(Debug, Clone, Copy)]
+struct LayoutWrapper(LayoutName);
+
+impl FromStr for LayoutWrapper {
+    type Err = String;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "plain" => Ok(LayoutWrapper(LayoutName::plain)),
+            "small" => Ok(LayoutWrapper(LayoutName::small)),
+            "dex" => Ok(LayoutWrapper(LayoutName::dex)),
+            "recursive" => Ok(LayoutWrapper(LayoutName::recursive)),
+            "starknet" => Ok(LayoutWrapper(LayoutName::starknet)),
+            "starknet_with_keccak" => Ok(LayoutWrapper(LayoutName::starknet_with_keccak)),
+            "recursive_large_output" => Ok(LayoutWrapper(LayoutName::recursive_large_output)),
+            "recursive_with_poseidon" => Ok(LayoutWrapper(LayoutName::recursive_with_poseidon)),
+            "all_solidity" => Ok(LayoutWrapper(LayoutName::all_solidity)),
+            "all_cairo" => Ok(LayoutWrapper(LayoutName::all_cairo)),
+            "dynamic" => Ok(LayoutWrapper(LayoutName::dynamic)),
+            _ => Err(format!("Invalid layout: {}", s)),
+        }
+    }
+}
+
+fn parse_layout(s: &str) -> Result<LayoutName, String> {
+    s.parse::<LayoutWrapper>().map(|wrapper| wrapper.0)
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
@@ -136,7 +169,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let dummy_snos_program = std::fs::read(args.compiled_program)?;
     let tasks = make_bootloader_tasks(&[&dummy_snos_program], &[])?;
 
-    let mut runner = cairo_run_bootloader_in_proof_mode(&bootloader_program, tasks)?;
+    let mut runner = cairo_run_bootloader_in_proof_mode(&bootloader_program, tasks, args.layout)?;
 
     // Air public input
     {

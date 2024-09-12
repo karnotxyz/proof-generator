@@ -10,7 +10,7 @@ CAIRO_ENV := ./dependencies/cairo-vm/cairo-vm-env/bin/activate
 FILENAME_WITH_EXT := $(notdir $(CAIRO_PROGRAM))
 FILENAME_WITHOUT_EXT := $(basename $(FILENAME_WITH_EXT))
 DIR_NAME := $(dir $(CAIRO_PROGRAM))
-OUTPUT_DIR := $(DIR_NAME)output/
+OUTPUT_DIR := $(DIR_NAME)output/$(LAYOUT)/
 OUTPUT_BASE_NAME := $(OUTPUT_DIR)$(FILENAME_WITHOUT_EXT)
 INPUT_BASE_NAME := $(basename $(CAIRO_PROGRAM))
 
@@ -101,7 +101,8 @@ run_bootloader: compile
 		--air-public-input $(PUBLIC_INPUT) \
 		--air-private-input $(PRIVATE_INPUT) \
 		--memory-file $(MEMORY_FILE) \
-		--trace $(TRACE_FILE)
+		--trace $(TRACE_FILE) \
+		--layout $(LAYOUT)
 	node format.js $(PUBLIC_INPUT)
 	@echo "Running with bootloader Successfull !!"
 
