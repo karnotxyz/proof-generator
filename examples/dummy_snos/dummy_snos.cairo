@@ -21,10 +21,10 @@ from starkware.cairo.common.serialize import serialize_word
 func main(output_ptr: felt*) -> (output_ptr: felt*) {
     alloc_locals;
 
-    assert output_ptr[0] = 1;
-    assert output_ptr[1] = 2;
-
-    assert output_ptr[2] = 7;
+    // assert output_ptr[0] = 1;
+    // assert output_ptr[1] = 2;
+    //
+    // assert output_ptr[2] = 7;
     %{
             output_builtin.add_attribute('gps_fact_topology', [
                 # Push 1 + n_pages pages (all of the pages).
@@ -38,7 +38,7 @@ func main(output_ptr: felt*) -> (output_ptr: felt*) {
                 2,
             ])
     %}
-   
+
     // Return the updated output_ptr.
-    return (output_ptr=&output_ptr[3]);
+    return (output_ptr=&output_ptr[0]);
 }

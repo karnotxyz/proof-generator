@@ -28,7 +28,7 @@ use clap::Parser;
 fn cairo_run_bootloader_in_proof_mode(
     bootloader_program: &Program,
     tasks: Vec<TaskSpec>,
-    layout: LayoutName
+    layout: LayoutName,
 ) -> Result<CairoRunner, CairoRunError> {
     let mut hint_processor = BootloaderHintProcessor::new();
 
@@ -48,7 +48,7 @@ fn cairo_run_bootloader_in_proof_mode(
     let bootloader_input = BootloaderInput {
         simple_bootloader_input: SimpleBootloaderInput {
             fact_topologies_path: None,
-            single_page: false,
+            single_page: true,
             tasks,
         },
         bootloader_config: BootloaderConfig {
@@ -111,10 +111,10 @@ struct Args {
     #[arg(short, long, required = true)]
     compiled_program: String,
 
-    #[arg(short='u', long, required = true)]
+    #[arg(short = 'u', long, required = true)]
     air_public_input: String,
 
-    #[arg(short='p', long, required = true)]
+    #[arg(short = 'p', long, required = true)]
     air_private_input: String,
 
     #[arg(short, long, required = true)]
@@ -124,7 +124,7 @@ struct Args {
     trace: String,
 
     #[arg(short, long, value_parser = parse_layout, default_value = "small")]
-    layout: LayoutName
+    layout: LayoutName,
 }
 
 #[derive(Debug, Clone, Copy)]
