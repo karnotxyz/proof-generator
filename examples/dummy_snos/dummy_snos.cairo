@@ -23,41 +23,21 @@ func main{output_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr, bitwis
     alloc_locals;
 
 
-    local a = 2;
-    local b = 2;
-    local c = a*b + b;
-    local d = c + b;
-    local e = a + b;
-
-
-    assert output_ptr[0] = 1;
-    assert output_ptr[1] = c;
-
-    // Compute the data availability segment.
-    local state_updates_start: felt*;
-    state_updates_start = 1;
-    let state_updates_ptr = state_updates_start;
-
-
-    assert output_ptr[2] = 7;
-
-
-    with output_ptr {
-        serialize_output_header();
-    }
-
-    let da_start = output_ptr;
+    // assert output_ptr[0] = 1;
+    // assert output_ptr[1] = 2;
+    //
+    // assert output_ptr[2] = 7;
 
     %{
-            // onchain_data_start = ids.da_start
-            // max_page_size=1
-            // for i in range(4):
-            //   start_offset = i * max_page_size
-            //   output_builtin.add_page(
-            //       page_id=1 + i,
-            //       page_start=onchain_data_start + start_offset + 1,
-            //       page_size=max_page_size
-            //   )
+            # onchain_data_start = ids.da_start
+            # max_page_size=1
+            # for i in range(4):
+            #   start_offset = i * max_page_size
+            #   output_builtin.add_page(
+            #       page_id=1 + i,
+            #       page_start=onchain_data_start + start_offset + 1,
+            #       page_size=max_page_size
+            #   )
 
             # Set the tree structure to a root with two children:
             # * A leaf which represents the main part
