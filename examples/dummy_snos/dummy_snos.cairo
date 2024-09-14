@@ -12,13 +12,14 @@
 // See the License for the specific language governing permissions
 // and limitations under the Licenser
 
-%builtins output
+%builtins output pedersen range_check bitwise
 
 
 from starkware.cairo.common.segments import relocate_segment
+from starkware.cairo.common.cairo_builtins import HashBuiltin
 from starkware.cairo.common.serialize import serialize_word
 
-func main(output_ptr: felt*) -> (output_ptr: felt*) {
+func main{output_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr, bitwise_ptr}() -> () {
     alloc_locals;
 
 
@@ -78,20 +79,5 @@ func main(output_ptr: felt*) -> (output_ptr: felt*) {
 
 
     // Return the updated output_ptr.
-    return (output_ptr=&output_ptr[9]);
-}
-
-// Serializes to output the constant-sized execution info needed for the L1 state update;
-// for example, state roots and config hash.
-func serialize_output_header{output_ptr: felt*}() {
-    // Serialize program output.
-
-
-    assert output_ptr[3] = 8;
-    assert output_ptr[4] = 8;
-    assert output_ptr[5] = 8;
-    assert output_ptr[6] = 8;
-    assert output_ptr[7] = 8;
-    assert output_ptr[8] = 8;
     return ();
 }
