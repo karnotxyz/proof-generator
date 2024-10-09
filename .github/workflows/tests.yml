@@ -1,0 +1,13 @@
+name: Task - Run tests
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: ./install.sh && make proove_with_program CAIRO_PROGRAM=./examples/dummy_snos/dummy_snos.cairo LAYOUT=recursive

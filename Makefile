@@ -22,7 +22,7 @@ PRIVATE_INPUT := $(OUTPUT_BASE_NAME)_private_input.json
 TRACE_FILE := $(OUTPUT_BASE_NAME)_trace.bin
 MEMORY_FILE := $(OUTPUT_BASE_NAME)_memory.bin
 PROOF_FILE := $(OUTPUT_BASE_NAME)_proof.json
-CAIRO_PIE_OUTPUT := $(BASE_NAME)_pie.zip
+CAIRO_PIE_OUTPUT := $(OUTPUT_BASE_NAME)_pie.zip
 PROVER_CONFIG := $(INPUT_BASE_NAME)_cpu_air_prover_config.json
 PARAM_FILE := $(INPUT_BASE_NAME)_cpu_air_params.json
 

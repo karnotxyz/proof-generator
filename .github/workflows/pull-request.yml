@@ -12,3 +12,7 @@ jobs:
   linters:
     name: Run linters
     uses: ./.github/workflows/linters.yml
+
+  tests:
+    name: Run tests
+    uses: ./.github/workflows/tests.yml
